@@ -1,5 +1,5 @@
 import { WebPlugin } from '@capacitor/core';
-import { deleteToken, getMessaging, getToken, isSupported as isSupportedInWeb, onMessage, } from 'firebase/messaging';
+import { deleteToken, getMessaging, getToken, isSupported as isSupportedInWeb, onMessage, } from '@firebase/messaging';
 export class FirebaseMessagingWeb extends WebPlugin {
     constructor() {
         super();
