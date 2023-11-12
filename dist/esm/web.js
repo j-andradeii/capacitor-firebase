@@ -11,6 +11,7 @@ export class FirebaseMessagingWeb extends WebPlugin {
             onMessage(messaging, payload => this.handleNotificationReceived(payload));
         });
     }
+    
     async checkPermissions() {
         const receive = this.convertNotificationPermissionToPermissionState(Notification.permission);
         return {
